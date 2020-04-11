@@ -23,41 +23,25 @@ jQuery(document).ready(function($) {
     
     
     /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-
-//*for bug movement all-over web pageX
- var targethead = window.document.getElementsByTagName("head")[0],
-    loadedSpiders = false,
-    jst = window.document.createElement("script");
-  jst.async = true;
-  jst.type = "text/javascript";
-  jst.src = "/path/to/bug-min.js";
-  jst.onload = jst.onreadystatechange = function() {
-    if (!loadedSpiders && (!this.readyState || this.readyState == 'complete')) {
-      loadedSpiders = true;
-      // start fire the JS.
-      new BugController();
-    }
-  };
-  targethead.appendChild(jst);    
+    $('.level-label').tooltip();   
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     
     $("#rss-feeds").rss(
     
         //rss feeds for my personal blog
-        "https://naijadowell.com/feed/",
+        "https://jobs4me.com.ng/feed/",
         
         {
         // how many entries do you want?
         // default: 4
         // valid values: any integer
-        limit: 4,
+        limit: 5,
         
         // the effect, which is used to let the entries appear
         // default: 'show'
         // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideFastSynced',
+        effect: 'slideSynced',
         
         // will request the API via https
 	    // default: false
