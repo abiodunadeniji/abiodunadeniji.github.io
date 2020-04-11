@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //rss feeds for my personal blog
-        "https://jobs4me.com.ng/feed/",
+        "https://www.jobs4me.com.ng/feed/",
         
         {
         // how many entries do you want?
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
         // the effect, which is used to let the entries appear
         // default: 'show'
         // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideSynced',
+        effect: 'slideFastSynced',
         
         // will request the API via https
 	    // default: false
@@ -61,13 +61,13 @@ jQuery(document).ready(function($) {
         }
     );
     
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
+    /* Github Calendar - https://github.com/abiodunadeniji/github-calendar */
    
 
 	
     
     
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
+    /* Github Activity Feed - https://github.com/abiodunadeniji/github-activity */
     
 
 
